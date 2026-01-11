@@ -1,6 +1,6 @@
 <?php
-
-namespaces App\Controllers;
+heheheheheheheh
+namespace App\Controllers;
 
 use App\Models\TestProjects;
 use PDO;
