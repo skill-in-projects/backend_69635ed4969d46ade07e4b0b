@@ -1,0 +1,18 @@
+# Nixpacks configuration for Railway - PHP Backend
+# Backend files are at root level
+
+[phases.setup]
+nixPkgs = { php = "8.2" }
+
+[phases.install]
+cmds = [
+  "composer install --no-dev --optimize-autoloader"
+]
+
+[phases.build]
+cmds = [
+  "echo 'Build complete'"
+]
+
+[start]
+cmd = "php -S 0.0.0.0:$PORT -t . index.php"
